@@ -52,9 +52,9 @@ export default {
  <div class="container">
     <div class="item" v-for="item in data" :key="item.id">
       <div v-if="item.id !== selected">
-        <div class="name">Name:{{ item.name }}</div>  
-        <div class="value">Value:{{ item.value }}</div>
-        <img src="edit.png" @click="edit(item.id)" alt="">
+        <div class="name">Name: {{ item.name }}</div>  
+        <div class="value">Value: {{ item.value }}</div>
+        <img src="./edit.png" @click="edit(item.id)" alt="">
       </div>
       <div v-else>
         <form>
